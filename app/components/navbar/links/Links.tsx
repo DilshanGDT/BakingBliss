@@ -24,8 +24,8 @@ export const Links = () => {
   return (
     <div className="bg-blue-600">
       {links.map((link) => (
-        <div className="flex flex-row justify-between">
-          <Link href={link.path} key={link.title}>
+        <div className="flex flex-row">
+          <Link className="flex flex-row" href={link.path} key={link.title}>
             {link.title}
           </Link>
         </div>
