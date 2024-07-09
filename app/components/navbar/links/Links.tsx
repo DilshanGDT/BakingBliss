@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Links = () => {
   const links = [
     {
-      title: "Homepage",
+      title: "Home",
       path: "/",
     },
     {
@@ -22,11 +22,13 @@ export const Links = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-blue-600">
       {links.map((link) => (
-        <Link href={link.path} key={link.title}>
-          {link.title}
-        </Link>
+        <div className="flex flex-row justify-between">
+          <Link href={link.path} key={link.title}>
+            {link.title}
+          </Link>
+        </div>
       ))}
     </div>
   );
