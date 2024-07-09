@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --bg: rgb(252, 218, 224);
+    --text: rgb(31, 28, 28);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
